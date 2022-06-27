@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/widgets.dart';
@@ -42,6 +44,34 @@ class LoginPage extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
+            TextFormField(
+              // autofocus: true,
+              keyboardType: TextInputType.text,
+              obscureText: true,
+              decoration: const InputDecoration(
+                labelText: "Password",
+                labelStyle: TextStyle(
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 20,
+                ),
+              ),
+              style: const TextStyle(fontSize: 20),
+            ),
+            Container(
+              height: 40,
+              alignment: Alignment.centerRight,
+              child: FlatButton(
+                child: const Text(
+                  "Recuperar Senha",
+                ),
+                onPressed: () {},
+              ),
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            Container()
           ],
         ),
       ),

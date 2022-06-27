@@ -90,6 +90,7 @@ flutter:
 
   assets:
     - assets/logo.png
+    - assets/Dog_logo.png
     - assets/bone.png
     - assets/fb-icon.png
     - assets/reset-password-icon.png
