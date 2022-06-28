@@ -89,7 +89,9 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   assets:
-    - assets/logo.png
+    - assets/app_logo.png
+    - assets/fechado.png
+    - assets/dog-logo.png
     - assets/Dog_logo.png
     - assets/bone.png
     - assets/fb-icon.png

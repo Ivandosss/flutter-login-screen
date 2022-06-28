@@ -19,9 +19,9 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             SizedBox(
-              width: 128,
-              height: 128,
-              child: Image.asset("assets/logo.png"),
+              width: 135,
+              height: 135,
+              child: Image.asset("assets/dog-logo.png"),
             ),
             const SizedBox(
               height: 20,
@@ -84,12 +84,12 @@ class LoginPage extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     stops: [
-                      0.2,
+                      0.3,
                       1
                     ],
                     colors: [
-                      Color(0XFFF58524),
-                      Color(0XFFF92B7F),
+                      Color.fromRGBO(60, 148, 149, 1),
+                      Color.fromRGBO(249, 43, 127, 1),
                     ]),
                 borderRadius: BorderRadius.all(
                   Radius.circular(5),

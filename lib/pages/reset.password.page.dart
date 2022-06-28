@@ -26,7 +26,7 @@ class ResetPasswordPage extends StatelessWidget {
             SizedBox(
               width: 200,
               height: 200,
-              child: Image.asset("assets/reset-password-icon.png"),
+              child: Image.asset("assets/fechado.png"),
             ),
             const SizedBox(
               height: 20,
@@ -78,12 +78,12 @@ class ResetPasswordPage extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     stops: [
-                      0.2,
+                      0.3,
                       1
                     ],
                     colors: [
-                      Color(0XFFF58524),
-                      Color(0XFFF92B7F),
+                      Color.fromRGBO(60, 148, 149, 1),
+                      Color.fromRGBO(249, 43, 127, 1),
                     ]),
                 borderRadius: BorderRadius.all(
                   Radius.circular(5),
@@ -103,6 +103,9 @@ class ResetPasswordPage extends StatelessWidget {
                   onPressed: () => {},
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 20,
             ),
           ],
         ),
