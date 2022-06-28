@@ -93,14 +93,21 @@ class LoginPage extends StatelessWidget {
               child: SizedBox.expand(
                 child: FlatButton(
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const <Widget>[
-                      Text(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      const Text(
                         "Login",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontSize: 20,
+                        ),
+                      ),
+                      Container(
+                        child: SizedBox(
+                          child: Image.asset("assets/bone.png"),
+                          height: 28,
+                          width: 28,
                         ),
                       ),
                     ],
@@ -124,8 +131,8 @@ class LoginPage extends StatelessWidget {
               child: SizedBox.expand(
                 child: FlatButton(
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const <Widget>[
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
                       Text(
                         "Login com Facebook",
                         style: TextStyle(
@@ -134,6 +141,13 @@ class LoginPage extends StatelessWidget {
                           fontSize: 20,
                         ),
                       ),
+                      Container(
+                        child: SizedBox(
+                          child: Image.asset("assets/fb-icon.png"),
+                          height: 28,
+                          width: 28,
+                        ),
+                      )
                     ],
                   ),
                   onPressed: () => {},
