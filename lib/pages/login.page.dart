@@ -1,9 +1,7 @@
 // ignore_for_file: deprecated_member_use
-
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+
+import 'reset.password.page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -65,7 +63,14 @@ class LoginPage extends StatelessWidget {
                 child: const Text(
                   "Recuperar Senha",
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ResetPasswordPage(),
+                    ),
+                  );
+                },
               ),
             ),
             const SizedBox(
