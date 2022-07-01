@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/customTextField.dart';
 
 class ResetPasswordPage extends StatelessWidget {
   const ResetPasswordPage({Key? key}) : super(key: key);
@@ -87,19 +88,9 @@ class ResetPasswordPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            TextFormField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(
-                labelText: "E-mail",
-                labelStyle: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20,
-                ),
-              ),
-              style: const TextStyle(
-                fontSize: 20,
-              ),
+            CustomTextField(
+              label: 'E-mail',
+              hint: 'Type your e-mail',
             ),
             const SizedBox(
               height: 20,

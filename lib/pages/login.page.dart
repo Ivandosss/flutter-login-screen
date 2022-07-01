@@ -25,17 +25,15 @@ class LoginPage extends StatelessWidget {
               height: 150,
               child: Image.asset("assets/dog.png"),
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             const CustomTextField(
-              label: "E-mail",
+              label: 'E-mail',
+              hint: 'Type your email...',
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 15),
             const CustomTextField(
-              label: "Password",
+              label: 'Password',
+              hint: 'Type your password',
             ),
             Container(
               height: 40,
@@ -103,7 +101,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 15,
             ),
             Container(
               height: 60,
