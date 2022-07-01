@@ -5,6 +5,40 @@ class ResetPasswordPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var container = Container(
+      height: 60,
+      alignment: Alignment.centerLeft,
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            stops: [
+              0.3,
+              1
+            ],
+            colors: [
+              Color.fromRGBO(60, 148, 149, 1),
+              Color.fromRGBO(249, 43, 127, 1),
+            ]),
+        borderRadius: BorderRadius.all(
+          Radius.circular(5),
+        ),
+      ),
+      child: SizedBox.expand(
+        child: FlatButton(
+          child: const Text(
+            "Enviar",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 20,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          onPressed: () => {},
+        ),
+      ),
+    );
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -70,40 +104,7 @@ class ResetPasswordPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Container(
-              height: 60,
-              alignment: Alignment.centerLeft,
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    stops: [
-                      0.3,
-                      1
-                    ],
-                    colors: [
-                      Color.fromRGBO(60, 148, 149, 1),
-                      Color.fromRGBO(249, 43, 127, 1),
-                    ]),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(5),
-                ),
-              ),
-              child: SizedBox.expand(
-                child: FlatButton(
-                  child: const Text(
-                    "Enviar",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  onPressed: () => {},
-                ),
-              ),
-            ),
+            container,
             const SizedBox(
               height: 20,
             ),

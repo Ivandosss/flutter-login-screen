@@ -1,5 +1,6 @@
 // ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
+import 'package:login_app/pages/signup.page.dart';
 
 import 'reset.password.page.dart';
 
@@ -169,7 +170,14 @@ class LoginPage extends StatelessWidget {
                   "Cadastre-se",
                   textAlign: TextAlign.center,
                 ),
-                onPressed: () => {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SignupPage(),
+                    ),
+                  );
+                },
               ),
             ),
           ],
