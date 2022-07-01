@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_app/pages/signup.page.dart';
 
+import '../customTextField.dart';
 import 'reset.password.page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -20,42 +21,21 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             SizedBox(
-              width: 135,
-              height: 135,
-              child: Image.asset("assets/dog-logo.png"),
+              width: 150,
+              height: 150,
+              child: Image.asset("assets/dog.png"),
             ),
             const SizedBox(
               height: 20,
             ),
-            TextFormField(
-              // autofocus: true,
-              keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(
-                labelText: "E-mail",
-                labelStyle: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20,
-                ),
-              ),
-              style: const TextStyle(fontSize: 20),
+            const CustomTextField(
+              label: "E-mail",
             ),
             const SizedBox(
               height: 10,
             ),
-            TextFormField(
-              // autofocus: true,
-              keyboardType: TextInputType.text,
-              obscureText: true,
-              decoration: const InputDecoration(
-                labelText: "Password",
-                labelStyle: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20,
-                ),
-              ),
-              style: const TextStyle(fontSize: 20),
+            const CustomTextField(
+              label: "Password",
             ),
             Container(
               height: 40,

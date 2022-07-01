@@ -90,6 +90,7 @@ flutter:
 
   assets:
     - assets/app_logo.png
+    - assets/dog.png
     - assets/profile_picture.png
     - assets/fechado.png
     - assets/dog-logo.png

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Dog Food',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.teal,
       ),
       home: const LoginPage(),
     );
